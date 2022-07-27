@@ -32,7 +32,7 @@ section{
 	padding-bottom: 100px;
 }
 img{
-	max-width: 100%;
+	width: 100%;
 }
 span{
 	color: var(--brand-3);
@@ -187,7 +187,7 @@ label{
 #callMe .text-content span{
 	color: var(--brand-5);
 }
-#callMe .text-content li{
+.text-content li{
 	color: var(--brand);
 	list-style: square;
 	font-size: 15px;
@@ -210,4 +210,126 @@ form span{
 form span a{
 	color: var(--brand-5);
 	text-decoration: underline;
+}
+/* PROJECTS & TESTIMONIALS */
+#testimonials{
+	padding-top: 0 !important;
+}
+#projects .list-item {
+	position: relative;
+	list-style: none;
+	text-align: center;
+	flex-wrap: wrap;
+	margin-top: 15px ;
+	justify-content: center;
+}
+#projects .list-item li {
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 13px 5px;
+}
+#projects .list-item li a{
+	color: var(--brand-3);
+	padding: 10px 40px;
+	background: var(--brand-4);
+	transition: var(--transition);
+}
+#projects .list-item .active{
+	background: var(--brand);
+	color: var(--white);
+}
+#projects .list-item a:hover{
+	background: var(--brand);
+	color: var(--white);	
+}
+.testimonial-item,
+.projects-item{
+	position: relative;
+	overflow: hidden;
+}
+.testimonial-item img,
+.testimonial-item .testimonial-overlay,
+.projects-item img,
+.projects-item .project-overlay{
+	transition: var(--transition);
+}
+.testimonial-overlay,
+.project-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg, #14bf98, rgba(3,169,244,0.5));
+	display: flex;
+	align-items: flex-end;
+	padding: 30px;
+	opacity: 0;
+}
+.testimonial-overlay h3,
+.project-overlay h3,
+.project-overlay p,
+.testimonial-overlay p{
+	color: var(--white);
+}
+.testimonial-item:hover .testimonial-overlay,
+.projects-item:hover .project-overlay{
+	opacity: 1;
+}
+.testimonial-item:hover img,
+.projects-item:hover img{
+
+	transform: scale(1.1);
+}
+/* ABOUT */
+#about .text-content{
+	max-width: 500px;;
+	text-align: justify;
+}
+#about .text-content span{
+	color: #666;
+}
+/* TEAM */
+#team{
+	padding-top: 50px !important;
+}
+#team img{
+	width: 70px;
+	height: 70px;
+	transition: var(--transition);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+	background: transparent;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link img{
+	transform: scale(1.5);
+}
+.review .stars{
+	color: var(--brand);
+}
+.review p{
+	max-width: 720px;
+	margin: 24px auto;
+	font-style: italic;
+}
+.social-icons{
+	position: relative;
+	text-align: center;
+	justify-content: center;
+}
+.social-icons a{
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid var(--brand-2);
+	font-size: 24px;
+	color: var(--brand-2);
+	border-radius: 100px;
+	margin: 10px 4px;
+}
+.social-icons a:hover{
+	background: var(--brand-2);
+	color: var(--white);
 }
