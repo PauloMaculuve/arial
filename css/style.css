@@ -1,0 +1,213 @@
+/* IMPORT URL FONT */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* VARIVEIS */
+:root{
+	--white: #fff;
+	--brand: #14bf98;
+	--brand-2: #113448;
+	--brand-3: #333333;
+	--brand-4: #fbfbfb;
+	--brand-5: #cfd8dc;
+	--transition:  all 0.4s;
+}
+
+/*  */
+body{
+	color: #666;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: var(--brand-3);
+}
+a{
+	text-decoration: none;
+	transition: all 0.4s;
+}
+section{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+img{
+	max-width: 100%;
+}
+span{
+	color: var(--brand-3);
+}
+small{
+	color: var(--brand);
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+label{
+	color: var(--brand);
+}
+/* LOGO */
+.logo img{
+	width: 30px;
+	background-size: cover;
+}
+/* NAVBAR */
+.navbar{
+	background: var(--brand-2);
+}
+.navbar-nav .nav-item .nav-link{
+	color: var(--white);
+	text-transform: uppercase;
+}
+.navbar-nav .nav-item .nav-link.active{
+	color: #14bf98;
+}
+
+/* NAVBAR TOGGER */
+.navbar-toggler{
+	background: var(--white);
+}
+/* HOME */
+#home{
+	height: 100vh;
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../img/header-background.jpg);
+	background-size: cover;
+	background-attachment: scroll;
+	background-position: center;
+	box-shadow: rgba(0, 0, 0, 0.4);
+	display: flex;
+	align-items: center;
+}
+#home p{
+	max-width: 600px;
+	margin: 24px auto;
+}
+/* BTN BRAND */
+.btn-brand{
+	color: #fff;
+	text-transform: uppercase;
+	padding: 12px 28px;
+	border-radius: 0;
+	background: var(--brand);
+	transition: var(--transition);
+}
+.btn-brand:hover{
+	color: #fff;
+	border: 1px solid #14bf98;
+}
+/* INTRO */
+.text-content{
+	position: relative;
+	text-align: justify;
+
+}
+/*.center{
+	position: relative;
+	margin: 16px auto;
+}*/
+.hline{
+	position: relative;
+	width: 100px;
+	height: 2px;
+	background: var(--brand-3);
+	margin: 10px auto;
+}
+.hexagon{
+	position: relative;
+	width: 104px;
+	height: 60px;
+	top: 50px;
+	background: var(--brand);
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.hexagon:before {
+	position: absolute;
+	content: '';
+	width: 0;
+	bottom: 60px;
+	border-bottom: 30px solid var(--brand);
+	border-left: 52px solid transparent;
+	border-right: 52px solid transparent;
+}
+.hexagon:after{
+	position: absolute;
+	content: '';
+	width: 0;
+	top: 60px;
+	border-top: 30px solid var(--brand);
+	border-left: 52px solid transparent;
+	border-right: 52px solid transparent;
+}
+.hexagon .bx{
+	position: absolute;
+	color: var(--white);
+	font-weight: 700;
+	font-size: 30px;
+}
+.box-text{
+	position: relative;
+	margin-top: 80px;
+}
+.box-text p{
+	max-width: 250px;
+}
+/* SERVICES  */
+#services{
+	background: var(--brand-4);
+}
+#services h2{
+	max-width: 350px;
+	margin: 16px auto;
+} 
+.card .card-body .ints li{
+	list-style: square;
+	color: var(--brand);
+}
+.card .card-body .btn.btn-brand{
+	position: relative;
+	top: 40px;
+	transition: var(--transition);
+}
+.card .card-body .btn.btn-brand:hover{
+	color: var(--brand);
+	background: var(--white);
+}
+/* CALL_ME */
+#callMe{
+	background: var(--brand-2);
+}
+#callMe .text-content p{
+	max-width: 480px;
+}
+#callMe .text-content p,
+#callMe .text-content span{
+	color: var(--brand-5);
+}
+#callMe .text-content li{
+	color: var(--brand);
+	list-style: square;
+	font-size: 15px;
+}
+form .form-control{
+	height: 45px;
+	border-radius: 0;
+	border: 1px solid #39728f;
+	background: #2a5d77;
+	color: var(--white);
+}
+form .form-control:focus{
+	box-shadow: none;
+	border-color: var(--brand);
+}
+form span{
+	color: var(--brand-5);
+	letter-spacing: 1.5px;
+}
+form span a{
+	color: var(--brand-5);
+	text-decoration: underline;
+}
