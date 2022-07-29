@@ -342,21 +342,48 @@ form span a{
 	color: var(--white);
 }
 /* CONTACT */
-.contact .form-control{
-	height: 45px;
-	border-radius: 0;
-	border: 1px solid #39728f;
-	color: var(--white);
-}
-.contact  .form-control:focus{
-	box-shadow: none;
-	border-color: var(--brand);
+.contact  textarea::placeholder,
+.contact  input::placeholder{
+	color: #fff;
 }
 .contact  span{
-	color: var(--brand-5);
-	letter-spacing: 1.5px;
+	color: #666 !important;
+	letter-spacing: 1.5px !important;
 }
 .contact  span a{
-	
-	text-decoration: underline;
+	color: #666 !important;
+}
+footer{
+	background: var(--brand-2);
+}
+.footer-top{
+	padding-top: 80px;
+	padding-bottom: 30px;
+}
+.footer-top h4{
+	color: var(--white);
+	text-transform: uppercase;
+}
+.footer-bottom{
+	padding-top: 80px;
+	padding-bottom: 30px;
+}
+footer .social-icons{
+	position: relative;
+	justify-content: flex-start;
+	align-items: flex-start;
+	font-size: 24px;
+
+}
+footer .footer-links a{
+	display: block;
+	font-weight: 500;
+}
+footer p,
+footer .footer-links a,
+footer .social-icons a{
+	color: var(--brand-5);
+}
+footer .footer-links a:hover {
+	color: var(--brand);
 }
